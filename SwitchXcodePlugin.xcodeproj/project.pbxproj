@@ -43,9 +43,10 @@
 		E46E53241E459F6B00AB40A5 = {
 			isa = PBXGroup;
 			children = (
+				E4A50AC71E45A0B500BF1D12 /* Source */,
 				E46E532F1E459F6B00AB40A5 /* SwitchXcodePlugin */,
-				E46E532E1E459F6B00AB40A5 /* Products */,
 				E46E53441E459FD000AB40A5 /* Frameworks */,
+				E46E532E1E459F6B00AB40A5 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
@@ -86,6 +87,13 @@
 				E46E53451E459FD000AB40A5 /* Cocoa.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E4A50AC71E45A0B500BF1D12 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -313,6 +321,7 @@
 				E46E53431E459F6B00AB40A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
