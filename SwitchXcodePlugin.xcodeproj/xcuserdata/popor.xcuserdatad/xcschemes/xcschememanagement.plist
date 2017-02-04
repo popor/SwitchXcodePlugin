@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>Switch_XCSourceEditorExtension.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>E46E532C1E459F6B00AB40A5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>E4A50ACB1E45B85B00BF1D12</key>
 		<dict>
 			<key>primary</key>
 			<true/>

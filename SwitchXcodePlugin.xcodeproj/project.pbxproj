@@ -13,7 +13,35 @@
 		E46E533A1E459F6B00AB40A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E46E53391E459F6B00AB40A5 /* Assets.xcassets */; };
 		E46E533D1E459F6B00AB40A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E46E533B1E459F6B00AB40A5 /* Main.storyboard */; };
 		E46E53461E459FD000AB40A5 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46E53451E459FD000AB40A5 /* Cocoa.framework */; };
+		E4A50ACD1E45B85B00BF1D12 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E46E53451E459FD000AB40A5 /* Cocoa.framework */; };
+		E4A50AD31E45B85B00BF1D12 /* SourceEditorExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A50AD21E45B85B00BF1D12 /* SourceEditorExtension.m */; };
+		E4A50AD61E45B85B00BF1D12 /* SourceEditorCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = E4A50AD51E45B85B00BF1D12 /* SourceEditorCommand.m */; };
+		E4A50ADA1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E4A50ACC1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E4A50AD81E45B85B00BF1D12 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E46E53251E459F6B00AB40A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E4A50ACB1E45B85B00BF1D12;
+			remoteInfo = Switch_XCSourceEditorExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E4A50ADE1E45B85B00BF1D12 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E4A50ADA1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		E46E532D1E459F6B00AB40A5 /* SwitchXcodePlugin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwitchXcodePlugin.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +54,13 @@
 		E46E533C1E459F6B00AB40A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E46E533E1E459F6B00AB40A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E46E53451E459FD000AB40A5 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		E4A50ACC1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Switch_XCSourceEditorExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		E4A50AD01E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Switch_XCSourceEditorExtension.entitlements; sourceTree = "<group>"; };
+		E4A50AD11E45B85B00BF1D12 /* SourceEditorExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorExtension.h; sourceTree = "<group>"; };
+		E4A50AD21E45B85B00BF1D12 /* SourceEditorExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorExtension.m; sourceTree = "<group>"; };
+		E4A50AD41E45B85B00BF1D12 /* SourceEditorCommand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SourceEditorCommand.h; sourceTree = "<group>"; };
+		E4A50AD51E45B85B00BF1D12 /* SourceEditorCommand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SourceEditorCommand.m; sourceTree = "<group>"; };
+		E4A50AD71E45B85B00BF1D12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,14 +72,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4A50AC91E45B85B00BF1D12 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A50ACD1E45B85B00BF1D12 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		E46E53241E459F6B00AB40A5 = {
 			isa = PBXGroup;
 			children = (
-				E4A50AC71E45A0B500BF1D12 /* Source */,
 				E46E532F1E459F6B00AB40A5 /* SwitchXcodePlugin */,
+				E4A50ACE1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension */,
 				E46E53441E459FD000AB40A5 /* Frameworks */,
 				E46E532E1E459F6B00AB40A5 /* Products */,
 			);
@@ -54,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				E46E532D1E459F6B00AB40A5 /* SwitchXcodePlugin.app */,
+				E4A50ACC1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -89,11 +133,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E4A50AC71E45A0B500BF1D12 /* Source */ = {
+		E4A50ACE1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension */ = {
 			isa = PBXGroup;
 			children = (
+				E4A50AD11E45B85B00BF1D12 /* SourceEditorExtension.h */,
+				E4A50AD21E45B85B00BF1D12 /* SourceEditorExtension.m */,
+				E4A50AD41E45B85B00BF1D12 /* SourceEditorCommand.h */,
+				E4A50AD51E45B85B00BF1D12 /* SourceEditorCommand.m */,
+				E4A50AD71E45B85B00BF1D12 /* Info.plist */,
+				E4A50ACF1E45B85B00BF1D12 /* Supporting Files */,
 			);
-			path = Source;
+			path = Switch_XCSourceEditorExtension;
+			sourceTree = "<group>";
+		};
+		E4A50ACF1E45B85B00BF1D12 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E4A50AD01E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.entitlements */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,15 +164,34 @@
 				E46E53291E459F6B00AB40A5 /* Sources */,
 				E46E532A1E459F6B00AB40A5 /* Frameworks */,
 				E46E532B1E459F6B00AB40A5 /* Resources */,
+				E4A50ADE1E45B85B00BF1D12 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				E4A50AD91E45B85B00BF1D12 /* PBXTargetDependency */,
 			);
 			name = SwitchXcodePlugin;
 			productName = SwitchXcodePlugin;
 			productReference = E46E532D1E459F6B00AB40A5 /* SwitchXcodePlugin.app */;
 			productType = "com.apple.product-type.application";
+		};
+		E4A50ACB1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4A50ADB1E45B85B00BF1D12 /* Build configuration list for PBXNativeTarget "Switch_XCSourceEditorExtension" */;
+			buildPhases = (
+				E4A50AC81E45B85B00BF1D12 /* Sources */,
+				E4A50AC91E45B85B00BF1D12 /* Frameworks */,
+				E4A50ACA1E45B85B00BF1D12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Switch_XCSourceEditorExtension;
+			productName = Switch_XCSourceEditorExtension;
+			productReference = E4A50ACC1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension.appex */;
+			productType = "com.apple.product-type.xcode-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -126,6 +203,11 @@
 				ORGANIZATIONNAME = wanzi;
 				TargetAttributes = {
 					E46E532C1E459F6B00AB40A5 = {
+						CreatedOnToolsVersion = 8.2;
+						DevelopmentTeam = 33BJ6J8Z2B;
+						ProvisioningStyle = Automatic;
+					};
+					E4A50ACB1E45B85B00BF1D12 = {
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 33BJ6J8Z2B;
 						ProvisioningStyle = Automatic;
@@ -146,6 +228,7 @@
 			projectRoot = "";
 			targets = (
 				E46E532C1E459F6B00AB40A5 /* SwitchXcodePlugin */,
+				E4A50ACB1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -157,6 +240,13 @@
 			files = (
 				E46E533A1E459F6B00AB40A5 /* Assets.xcassets in Resources */,
 				E46E533D1E459F6B00AB40A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E4A50ACA1E45B85B00BF1D12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,7 +263,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		E4A50AC81E45B85B00BF1D12 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4A50AD31E45B85B00BF1D12 /* SourceEditorExtension.m in Sources */,
+				E4A50AD61E45B85B00BF1D12 /* SourceEditorCommand.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E4A50AD91E45B85B00BF1D12 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E4A50ACB1E45B85B00BF1D12 /* Switch_XCSourceEditorExtension */;
+			targetProxy = E4A50AD81E45B85B00BF1D12 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		E46E533B1E459F6B00AB40A5 /* Main.storyboard */ = {
@@ -302,6 +409,38 @@
 			};
 			name = Release;
 		};
+		E4A50ADC1E45B85B00BF1D12 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Switch_XCSourceEditorExtension/Switch_XCSourceEditorExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 33BJ6J8Z2B;
+				INFOPLIST_FILE = Switch_XCSourceEditorExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wanzitest.SwitchXcodePlugin.Switch-XCSourceEditorExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E4A50ADD1E45B85B00BF1D12 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = Switch_XCSourceEditorExtension/Switch_XCSourceEditorExtension.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = 33BJ6J8Z2B;
+				INFOPLIST_FILE = Switch_XCSourceEditorExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @executable_path/../../../../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.wanzitest.SwitchXcodePlugin.Switch-XCSourceEditorExtension";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -322,6 +461,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		E4A50ADB1E45B85B00BF1D12 /* Build configuration list for PBXNativeTarget "Switch_XCSourceEditorExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E4A50ADC1E45B85B00BF1D12 /* Debug */,
+				E4A50ADD1E45B85B00BF1D12 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
